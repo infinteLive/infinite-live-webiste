@@ -69,9 +69,9 @@ export default function About() {
   return (
     <div className="background">
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat">
-        <div className=" mt-40 p-8 min-[320px]:py-24 md:py-40  sm:p-12 lg:px-16 lg:py-24 h-full">
-          <div className="justify-center items-center text-center flex flex-col">
-            <h1 className="text-white text-5xl font-bold  mb-4">About Us</h1>
+        <div className=" mt-40 p-8  h-full">
+          <div className="justify-center items-center text-center flex flex-col absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h1 className="text-white text-5xl font-bold  mb-4 ab">About Us</h1>
             <hr className="border-2 border-red-800 w-40 mb-8" />
           </div>
 
