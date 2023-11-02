@@ -3,9 +3,7 @@ import '../app.css';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
 import FloatingButton from '../components/FloatingButton.';
-import videoOpening from '../assets/Cinematic Company Profile Business Video introduction.mp4'
-import Navbar from '../components/Navbar';
-
+import videoOpening from '../assets/VIDEO PROFILE_INFINITE_FIX.mp4'
 export default function LandingPage() {
   useEffect(() => {
     window.scrollTo(0, 0);

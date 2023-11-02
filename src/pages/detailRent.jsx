@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function DetailRent() {
     const [largeImageSrc, setLargeImageSrc] = useState('https://i.postimg.cc/0jwyVgqz/Microprocessor1-removebg-preview.png');
     const [showPopup, setShowPopup] = useState(false);
-    const [popUp,setPopUp] =useState(false)
+    const [isZoomed, setIsZoomed] = useState(false);
     const openPopup = () => {
       setShowPopup(true);
     };
@@ -13,6 +13,12 @@ export default function DetailRent() {
     const closePopup = () => {
       setShowPopup(false);
     };
+    const openZoom = () => {
+      setIsZoomed(true)
+    }
+    const closZoom = () => {
+      setIsZoomed(false)
+    }
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
@@ -61,9 +67,8 @@ export default function DetailRent() {
         <a className="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2" href="#">
           {/* ... */}
         </a>
-        <img onClick={openPopup} className="object-contain w-full lg:h-full" src={largeImageSrc} alt="" />
+        <img onClick={openPopup} onMouseEnter={openZoom} onMouseLeave={closZoom} className={`object-contain w-full lg:h-full ${isZoomed ? 'transform scale-125 transition-transform' : ''}`}  src={largeImageSrc} alt="" />
         <a className="absolute right-0 transform lg:mr-2 top-1/2 translate-1/2" href="#">
-          {/* ... */}
         </a>
       </div>
       <div className="flex-wrap hidden -mx-2 md:flex">

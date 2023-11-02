@@ -1,5 +1,7 @@
 import Footer from "../components/Footer";
 import Compro from "../assets/COMPRO INFINITE LIVE - SD.pdf";
+import ComproGagasIndo from "../assets/COMPRO-GAGASINDO-2023-FULL.pdf"
+import comproVAT from '../assets/Visual-Art-&-Technology-Company-Profile.pdf'
 import axios from "axios";
 import { saveAs } from "file-saver";
 import { useEffect } from "react";
@@ -7,9 +9,47 @@ export default function About() {
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
-  const handleDownload = () => {
+  const handleDownloadInfite = () => {
     axios({
       url: Compro,
+      method: "GET",
+      responseType: "blob",
+    })
+      .then((response) => {
+        const contentDisposition = response.headers["content-disposition"];
+        const fileName = contentDisposition.split("filename=")[1].trim();
+
+        saveAs(
+          new Blob([response.data], { type: "application/pdf" }),
+          fileName
+        );
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+  const handleDownloadComproGagas = () => {
+    axios({
+      url: ComproGagasIndo,
+      method: "GET",
+      responseType: "blob",
+    })
+      .then((response) => {
+        const contentDisposition = response.headers["content-disposition"];
+        const fileName = contentDisposition.split("filename=")[1].trim();
+
+        saveAs(
+          new Blob([response.data], { type: "application/pdf" }),
+          fileName
+        );
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+  const handleDownloadComproVAT = () => {
+    axios({
+      url: comproVAT,
       method: "GET",
       responseType: "blob",
     })
@@ -176,91 +216,148 @@ export default function About() {
         </div>
         <div className="flex flex-col px-10">
           <div className="ml-[150px]">
-          <div class="w-10/12 md:w-10/12 lg:6/12 mx-auto relative">
-      <div class="border-l-2 mt-10">
- 
-        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-2 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+            <div class="w-10/12 md:w-[720px] lg:6/12 mx-auto relative">
+              <div class="border-l-2 mt-10">
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-2 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-          <div class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                  <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
 
-    
-          <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-semibold">2022</h1>
+                    <h1 class="text-sm font-semibold">
+                      VELVET interior.exhibition.contractor merger dengan
+                      INFINITE live sehingga terbentuklah INFINITE live
+                      production One Stop Solution sewa dan jual perlengkapan
+                      pesta
+                    </h1>
+                  </div>
+                </div>
 
-     
-          <div class="flex-auto">
-            <h1 class="text-lg font-semibold">2022</h1>
-            <h1 class="text-xl">Orientation and Briefing on Uniliver basics</h1>
-          </div>
-        </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-pink-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div class="w-5 h-5 bg-pink-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
- 
-        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-pink-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
-       
-          <div class="w-5 h-5 bg-pink-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                  <div class="w-10 h-1 bg-pink-300 absolute -left-10 z-0"></div>
 
-     
-          <div class="w-10 h-1 bg-pink-300 absolute -left-10 z-0"></div>
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2020</h1>
+                    <h1 class="text-sm font-semibold">
+                      INFINITE live mulai menjadi distributor utama YESTECH di
+                      indonesia{" "}
+                    </h1>
+                  </div>
+                </div>
 
-          <div class="flex-auto">
-            <h1 class="text-lg">Day 1</h1>
-            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-            <h3>Classroom</h3>
-          </div>
-          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
-        </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-green-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div class="w-5 h-5 bg-green-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
+                  <div class="w-10 h-1 bg-green-300 absolute -left-10 z-0"></div>
 
-        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-green-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2018</h1>
+                    <h1 class="text-sm font-semibold">
+                      INFINITE live mendapatkan rekor MURI untuk "Tayangan
+                      Pertunjukan Melalui Rangkaian Layar LED Terpanjang" yang
+                      menjadi bagian dari LIVE Show
+                    </h1>
+                  </div>
+                </div>
 
-          <div class="w-5 h-5 bg-green-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-purple-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div class="w-5 h-5 bg-purple-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-     
-          <div class="w-10 h-1 bg-green-300 absolute -left-10 z-0"></div>
+                  <div class="w-10 h-1 bg-purple-300 absolute -left-10 z-0"></div>
 
-          <div class="flex-auto">
-            <h1 class="text-lg">Day 1</h1>
-            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-            <h3>Classroom</h3>
-          </div>
-          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
-        </div>
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2018</h1>
+                    <h1 class="text-sm font-semibold">
+                      nest group indonesia berbadan hukum PT. Sarang Gagas
+                      Indonesia
+                    </h1>
+                  </div>
+                </div>
 
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded mb-10 flex-col md:flex-row">
+                  <div class="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
-        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-purple-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
-    
-          <div class="w-5 h-5 bg-purple-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+                  <div class="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
 
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2016</h1>
+                    <h1 class="text-sm font-semibold">
+                      INFINITE live meluncurkan ngi-INFINITE.com sebagai portal
+                      rental event equipment online pertama di indonesia
+                    </h1>
+                  </div>
+                </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-orange-500 text-white rounded mb-10 flex-col md:flex-row">
+                  <div class="w-5 h-5 bg-orange-500 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
-          <div class="w-10 h-1 bg-purple-300 absolute -left-10 z-0"></div>
+                  <div class="w-10 h-1 bg-orange-200 absolute -left-10 z-0"></div>
 
-     
-          <div class="flex-auto">
-            <h1 class="text-lg">Day 1</h1>
-            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-            <h3>Classroom</h3>
-          </div>
-          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
-        </div>
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2013</h1>
+                    <h1 class="text-base font-semibold">
+                      VELVET interior.exhibition.contractor terbentuk
+                    </h1>
+                  </div>
+                </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-sky-950 text-white rounded mb-10 flex-col md:flex-row">
+                  <div class="w-5 h-5 bg-sky-950 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
- 
-        <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded mb-10 flex-col md:flex-row">
-    
-          <div class="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                  <div class="w-10 h-1 bg-sky-500 absolute -left-10 z-0"></div>
 
-       
-          <div class="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2012</h1>
+                    <h1 class="text-sm font-semibold">
+                      INFINITE live mulai mengkapanyekan LIVE (Lighting,
+                      Integrated with Visual-audio Equipment) SHOW
+                    </h1>
+                  </div>
+                </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-indigo-800 text-white rounded mb-10 flex-col md:flex-row">
+                  <div class="w-5 h-5 bg-indigo-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
-         
-          <div class="flex-auto">
-            <h1 class="text-lg">Day 1</h1>
-            <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
-            <h3>Classroom</h3>
-          </div>
-          <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
-        </div>
-      </div>
-  
-    </div>
+                  <div class="w-10 h-1 bg-indigo-400 absolute -left-10 z-0"></div>
+
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2011</h1>
+                    <h1 class="text-base font-semibold">
+                      INFINITE live melengkapi bidang layanannya dengan
+                      menambahkan perlengkapan multimedia
+                    </h1>
+                  </div>
+                </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-cyan-800 text-white rounded mb-10 flex-col md:flex-row">
+                  <div class="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+
+                  <div class="w-10 h-1 bg-cyan-300 absolute -left-10 z-0"></div>
+
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2010</h1>
+                    <h1 class="text-base font-semibold">
+                      INFINITE live lahir sebagai brand sound system & lighting
+                      rental company
+                    </h1>
+                  </div>
+                </div>
+                <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-cyan-800 text-white rounded mb-10 flex-col md:flex-row">
+                  <div class="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+
+                  <div class="w-10 h-1 bg-cyan-300 absolute -left-10 z-0"></div>
+
+                  <div class="flex-auto">
+                    <h1 class="text-lg font-bold">2009</h1>
+                    <h1 class="text-sm font-semibold">
+                      nest group indonesia didirikan untuk memberikan solusi
+                      dari permasalahan persiapan perlengkapan perlengkapan
+                      acara dengan Minimum Viable Product: Professional Sound
+                      System
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -288,9 +385,6 @@ export default function About() {
                 >
                   INTEGRATED OFFLINE ONLINE EVENT
                 </h2>
-                <button className="bg-zinc-300 hover:bg-zinc-400 text-black font-bold py-1 px-3 rounded-lg mt-9">
-                  Download Compro
-                </button>
               </div>
             </div>
 
@@ -310,9 +404,7 @@ export default function About() {
                   OFFLINE-ONLINE EVENT EQUIPMENT RENTAL & SYSTEMS INTEGRATOR
                   SUPPLIER
                 </h2>
-                <button className="bg-zinc-300 hover:bg-zinc-400 text-black font-bold py-1 px-8 rounded-lg">
-                  Download Compro
-                </button>
+               
               </div>
             </div>
 
@@ -331,12 +423,22 @@ export default function About() {
                 >
                   DESIGN AND PROGRAMMING IMMERSIVE SOFTWARE DEVELOPER
                 </h2>
-                <button className="bg-zinc-300 hover:bg-zinc-400 text-black font-bold py-1 px-8 rounded-lg mt-5">
-                  Download Compro
-                </button>
+                
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center gap-[120px]">
+                <button onClick={handleDownloadComproGagas} class="px-8 py-4 mt-10  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80">
+                  DOWLOAD COMPRO
+                </button>
+                <button onClick={handleDownloadInfite}   class="px-8 py-4 mt-10  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80">
+                  DOWLOAD COMPRO
+                </button>
+                <button onClick={handleDownloadComproVAT}   class="px-8 py-4 mt-10  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80">
+                  DOWLOAD COMPRO
+                </button>
+                
         </div>
       </div>
       <Footer />
