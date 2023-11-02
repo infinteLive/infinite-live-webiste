@@ -95,7 +95,7 @@ export default function About() {
       <div className="flex gap-44 mt-5">
         <div className="w-1/2 pl-40 ">
           <p className="text-lg mb-6 mt-20 text-white">
-            Nest group indonsia Didirikan oleh Bapak Soegianto Husin pada tahun
+            Nest group indonesia Didirikan oleh Bapak Soegianto Husin pada tahun
             2009 untuk memberikan solusi dari permasalahan persiapan
             perlengkapan acara dengan minimum viable product : professional
             sound system Setahun setelahnya pada 31 desember 2010 INFINITE live
