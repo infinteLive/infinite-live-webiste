@@ -99,7 +99,7 @@ export default function About() {
           Our Founder
         </h1>
       </div>
-      <div className="flex min-[320px]:justify-center min-[320px]:items-center  min-[320px]:gap-0 lg:justify-stretch lg:items-stretch min-[320px]:flex-col lg:flex-row lg:gap-44 mt-5">
+      <div className="flex min-[320px]:justify-center min-[320px]:items-center  min-[320px]:gap-0 lg:justify-stretch lg:items-stretch min-[320px]:flex-col lg:flex-row lg:gap-44 mt-5 xl:justify-center xl:items-center">
         <div className="min-[320px]:w-[80%]  lg:w-1/2 sm:pl-0 lg:pl-40 ">
           <p className="text-lg mb-6 lg:mt-10 xl:mt-20 text-white">
             Nest group indonsia Didirikan oleh Bapak Soegianto Husin pada tahun
@@ -220,8 +220,8 @@ export default function About() {
           </h1>
         </div>
         <div className="flex flex-col px-10">
-          <div className="min-[320px]:w-full sm:min-[320px]:ml-0 xl:ml-[150px]">
-            <div className="w-10/12 md:w-[720px] lg:6/12 mx-auto relative">
+          <div className="min-[320px]:w-full sm:min-[320px]:ml-0 ">
+            <div className="w-10/12 md:w-[720px] lg:6/12 xl:w-7/12 mx-auto relative">
               <div className="border-l-2 mt-10">
                 <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-2 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
@@ -389,7 +389,7 @@ export default function About() {
                 alt="Kitten"
               />
             </div>
-            <div className="mt-5 md:h-16">
+            <div className="mt-5 md:h-20">
               <h2 className="text-sm mb-3 font-bold text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
                 INTEGRATED OFFLINE ONLINE EVENT
               </h2>
@@ -397,7 +397,7 @@ export default function About() {
 
             <button
               onClick={handleDownloadComproGagas}
-              className="px-8 py-4 sm:mt-4 md:mt-0 mb-5 font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
+              className="px-8 py-4 min-[320px]:mt-4 sm:mt-4 md:mt-0 mb-5 font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
             >
               DOWLOAD COMPRO
             </button>
@@ -411,7 +411,7 @@ export default function About() {
                 alt="Kitten"
               />
             </div>
-            <div className="mt-5 md:h-16">
+            <div className="mt-5 md:h-20">
               <h2 className="text-sm font-bold mb-2 text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
                 OFFLINE-ONLINE EVENT EQUIPMENT RENTAL & SYSTEMS INTEGRATOR
                 SUPPLIER
@@ -433,7 +433,7 @@ export default function About() {
                 alt="Kitten"
               />
             </div>
-            <div className="mt-5 md:h-16">
+            <div className="mt-5 md:h-20">
               <h2 className="text-sm font-bold mb-2 text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
                 DESIGN AND PROGRAMMING IMMERSIVE SOFTWARE DEVELOPER
               </h2>
