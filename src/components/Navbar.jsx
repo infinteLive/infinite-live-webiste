@@ -129,7 +129,7 @@ const Navbar = () => {
 
           {/* burger menu */}
           <button
-            className=" text-3xl absolute top-3 right-10 flex justify-center items-center z-50 w-[50px] h-[50px] md:hidden"
+            className=" text-3xl absolute top-1 right-5 flex justify-center items-center z-50 w-[50px] h-[50px] md:hidden"
             onClick={handlerHamburgerMenu}
           >
             {toggleHamburgerMenu ? (

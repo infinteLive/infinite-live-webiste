@@ -49,18 +49,21 @@ export default function LandingPage() {
   return (
     <div className="bg-black w-full ">
       <div>
-        <div className=" w-full  " data-carousel="slide">
+        <div
+          className=" w-full h-screen overflow-hidden "
+          data-carousel="slide"
+        >
           {images.map((image, index) => (
             <div
               key={index}
               className={`${
-                index === currentImage ? "block" : "hidden"
+                index === currentImage ? "block w-full h-full" : "hidden"
               } duration-700 ease-in-out`}
               data-carousel-item
             >
               <img
                 src={image.url}
-                className="block w-full opacity-50  h-[650px]"
+                className="block w-full h-full opacity-50 "
                 alt={`Image ${index + 1}`}
               />
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
