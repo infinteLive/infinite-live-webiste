@@ -69,10 +69,12 @@ export default function About() {
   return (
     <div className="background">
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat">
-        <div className=" mt-40 p-8 min-[320px]:py-24 md:py-40  sm:p-12 lg:px-16 lg:py-24 h-full">
-          <div className="justify-center items-center text-center flex flex-col">
-            <h1 className="text-white text-5xl font-bold  mb-4">About Us</h1>
-            <hr className="border-2 border-red-800 w-40 mb-8" />
+        <div className=" mt-40 p-8  h-full">
+          <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <h1 className="text-white  sm:text-5xl font-bold  mb-4 min-[320px]:text-4xl ">
+              About Us
+            </h1>
+            <hr className="border-2 border-red-800 w-50 mb-8" />
           </div>
 
           <div
@@ -211,7 +213,7 @@ export default function About() {
       </div>
       {/* who we are end */}
 
-      <div className="min-[320px]:flex-col lg:flex-row min-[320px]:justify-center  xl:justify-stretch min-[320px]:items-center lg:items-stretch flex bg-black p-10 mt-20">
+      <div className="min-[320px]:flex-col lg:flex-row min-[320px]:justify-center xl:justify-center xl:items-center min-[320px]:items-center lg:items-stretch flex bg-black p-10 mt-20">
         <div className=" flex flex-col">
           <h1 className="text-red-700 text-5xl font-bold italic ml-10 min-[320px]:mt-16 lg:mt-[300px] ">
             Milestone
@@ -370,83 +372,79 @@ export default function About() {
       </div>
       {/*  milestone end */}
 
-      <div>
-        <div className=" md:h-[370px] lg:h-[470px] text-center mt-10 font-bold">
-          <h1
-            className="text-white min-[320px]:text-2xl sm:text-3xl italic"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
-            member of nest group indonesia
-          </h1>
+      <div className="text-center mt-10 font-bold">
+        <h1
+          className="text-white min-[320px]:text-2xl sm:text-3xl italic"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          member of nest group indonesia
+        </h1>
 
-          <div className="flex min-[320px]:flex-wrap md:flex-nowrap md:flex-row min-[320px]:gap-5 md:gap-8 lg:gap-20 justify-center items-start mt-12">
-            <div className="text-center">
-              <div className="min-[320px]:w-[300px] min-[320px]:h-[290px] md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px] rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
-                <img
-                  className="w-full h-full object-cover object-center mt-4"
-                  src="https://ik.imagekit.io/zhbznxloz/Logo%20Gagasindo.png?updatedAt=1696270465970"
-                  alt="Kitten"
-                />
-              </div>
-              <div className="mt-5">
-                <h2 className="text-sm mb-3 font-bold text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
-                  INTEGRATED OFFLINE ONLINE EVENT
-                </h2>
-              </div>
+        <div className="flex min-[320px]:flex-wrap md:flex-nowrap md:flex-row min-[320px]:gap-5 md:gap-8 lg:gap-20 justify-center items-start mt-12">
+          <div className="text-center ">
+            <div className="min-[320px]:w-[300px] min-[320px]:h-[290px] md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px] rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
+              <img
+                className="w-full h-full object-cover object-center mt-4"
+                src="https://ik.imagekit.io/zhbznxloz/Logo%20Gagasindo.png?updatedAt=1696270465970"
+                alt="Kitten"
+              />
+            </div>
+            <div className="mt-5 md:h-16">
+              <h2 className="text-sm mb-3 font-bold text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
+                INTEGRATED OFFLINE ONLINE EVENT
+              </h2>
             </div>
 
-            <div className="text-center">
-              <div className="min-[320px]:w-[300px] min-[320px]:h-[290px] md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
-                <img
-                  className="w-full h-full object-cover object-center"
-                  src="https://ik.imagekit.io/zhbznxloz/FINAL%20LOGO%20INFINITE%20live%20Production.png?updatedAt=1696270501376"
-                  alt="Kitten"
-                />
-              </div>
-              <div className="mt-5">
-                <h2 className="text-sm font-bold mb-2 text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
-                  OFFLINE-ONLINE EVENT EQUIPMENT RENTAL & SYSTEMS INTEGRATOR
-                  SUPPLIER
-                </h2>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="min-[320px]:w-[300px] min-[320px]:h-[290px]  md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
-                <img
-                  className="w-full h-full object-cover object-center p-5"
-                  src="https://ik.imagekit.io/zhbznxloz/VAT%20logo.png?updatedAt=1696270357403"
-                  alt="Kitten"
-                />
-              </div>
-              <div className="mt-5">
-                <h2 className="text-sm font-bold mb-2 text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
-                  DESIGN AND PROGRAMMING IMMERSIVE SOFTWARE DEVELOPER
-                </h2>
-              </div>
-            </div>
+            <button
+              onClick={handleDownloadComproGagas}
+              className="px-8 py-4 sm:mt-4 md:mt-0 mb-5 font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
+            >
+              DOWLOAD COMPRO
+            </button>
           </div>
-        </div>
 
-        <div className="flex justify-center items-center md:gap-[40px] lg:gap-[120px]">
-          <button
-            onClick={handleDownloadComproGagas}
-            className="px-8 py-4 mt-10  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
-          >
-            DOWLOAD COMPRO
-          </button>
-          <button
-            onClick={handleDownloadInfite}
-            className="px-8 py-4 mt-10  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
-          >
-            DOWLOAD COMPRO
-          </button>
-          <button
-            onClick={handleDownloadComproVAT}
-            className="px-8 py-4 mt-10  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
-          >
-            DOWLOAD COMPRO
-          </button>
+          <div className="text-center">
+            <div className="min-[320px]:w-[300px] min-[320px]:h-[290px] md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
+              <img
+                className="w-full h-full object-cover object-center"
+                src="https://ik.imagekit.io/zhbznxloz/FINAL%20LOGO%20INFINITE%20live%20Production.png?updatedAt=1696270501376"
+                alt="Kitten"
+              />
+            </div>
+            <div className="mt-5 md:h-16">
+              <h2 className="text-sm font-bold mb-2 text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
+                OFFLINE-ONLINE EVENT EQUIPMENT RENTAL & SYSTEMS INTEGRATOR
+                SUPPLIER
+              </h2>
+            </div>
+            <button
+              onClick={handleDownloadInfite}
+              className="px-8 py-4 mb-5  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
+            >
+              DOWLOAD COMPRO
+            </button>
+          </div>
+
+          <div className="text-center">
+            <div className="min-[320px]:w-[300px] min-[320px]:h-[290px]  md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
+              <img
+                className="w-full h-full object-cover object-center p-5"
+                src="https://ik.imagekit.io/zhbznxloz/VAT%20logo.png?updatedAt=1696270357403"
+                alt="Kitten"
+              />
+            </div>
+            <div className="mt-5 md:h-16">
+              <h2 className="text-sm font-bold mb-2 text-white md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  min-[320px]:w-[300px]">
+                DESIGN AND PROGRAMMING IMMERSIVE SOFTWARE DEVELOPER
+              </h2>
+            </div>
+            <button
+              onClick={handleDownloadComproVAT}
+              className="px-8 py-4 mb-5  font-bold text-white border-b-2 rounded-lg shadow-lg bg-black shadow-orange-500/80"
+            >
+              DOWLOAD COMPRO
+            </button>
+          </div>
         </div>
       </div>
       {/* member end */}
