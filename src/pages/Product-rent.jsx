@@ -170,11 +170,11 @@ export default function ProductRent() {
         </div>
         {selectedCategory && subCategories[selectedCategory] && (
           <div className="flex justify-center items-center min-[320px]:mt-5 sm:mt-8">
-            <div className="min-[320px]:flex-wrap sm:flex-nowrap sm:justify-center min-[320px]:justify-center items-center flex gap-2  w-[90%]">
+            <div className="min-[320px]:flex-wrap sm:flex-nowrap sm:justify-center min-[320px]:justify-center items-center sm:flex gap-2  w-[90%] min-[320px]:grid min-[320px]:grid-cols-2">
               {subCategories[selectedCategory].map((subCategory) => (
                 <button
                   key={subCategory}
-                  className={`bg-zinc-200 hover:bg-orange-500 min-[320px]:w-full min-[320px]:text-sm sm:text:xl text-black hover:text-white  font-bold py-2 px-2 rounded ${
+                  className={`bg-zinc-200 hover:bg-orange-500  min-[320px]:text-xs sm:text-xl sm:text-black hover:text-white  font-bold min-[320px]:px-2 py-2 lg:px-6 px-2 rounded ${
                     selectedSubCategory === subCategory
                       ? "bg-zinc-200 text-black"
                       : "bg-orange-500 text-black"
@@ -191,11 +191,11 @@ export default function ProductRent() {
           <div>
             <div className="mt-5">
               {selectedSubCategory ? (
-                <h1 className="text-white text-2xl font-bold ml-20 ">
+                <h1 className="text-white text-3xl font-bold ml-20 ">
                   {selectedSubCategory}
                 </h1>
               ) : (
-                <h1 className="text-white text-4xl font-bold ">Products</h1>
+                <h1 className="text-white text-3xl font-bold ">Products</h1>
               )}
             </div>
             <div className="grid md:grid-cols-3 mt-5 lg:grid-cols-4 min-[320px]:grid-cols-2  min-[320px]:gap-0 sm:gap-7 ">

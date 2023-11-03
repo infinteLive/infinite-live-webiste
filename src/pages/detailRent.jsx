@@ -65,7 +65,7 @@ export default function DetailRent() {
             <div className="flex flex-wrap justify-center items-center  min-[320px]:mb-14 sm:mb-24 mx-4 md:h-full overflow-hidden">
               <div className="w-full md:w-1/2 ">
                 <div className="relative  overflow-hidden bg-white rounded-xl">
-                  <div className="relative mb-6 lg:mb-10  min-[320px]:h-72 md:h-60 lg:h-96 overflow-hidden">
+                  <div className="relative mb-6 lg:mb-10  min-[320px]:h-52 md:h-60 lg:h-96 overflow-hidden">
                     {/* Tombol navigasi */}
                     <a
                       className="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2"
@@ -78,7 +78,7 @@ export default function DetailRent() {
                         onClick={openPopup}
                         onMouseEnter={openZoom}
                         onMouseLeave={closZoom}
-                        className={` object-cover  w-[400px] h-[300px]  ${
+                        className={` object-cover  min-[320px]:w-[240px] min-[320px]:pt-5 md:pt-0 min-[320px]:h-[210px] sm:w-[220px] sm:h-[210px] lg:w-[400px] lg:h-[340px]  ${
                           isZoomed
                             ? "transform scale-105 transition-transform"
                             : ""
