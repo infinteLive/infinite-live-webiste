@@ -15,7 +15,7 @@ const Navbar = () => {
   }
 
   const scrollToProduct = (e) => {
-    e.stopPropagation();
+  
     const targetElement = document.getElementById("product-section");
     window.scrollTo({
       top: targetElement.offsetTop,
@@ -24,6 +24,7 @@ const Navbar = () => {
   };
 
   const handleClick = (e) => {
+    console.log(e);
     e.preventDefault();
     if (location.pathname !== "/") {
       Navigate("/");
@@ -47,20 +48,31 @@ const Navbar = () => {
       window.removeEventListener("scroll", changeNav);
     };
   }, []);
-  function handleClickHome() {
+   function handleClickHome() {
     if (window.location.pathname !== "/") {
       window.location.href = "/";
     } else {
+      // const closeNavbar = () => {
+      //   return new Promise(resolve => {
+      //     setToggleHamburgerMenu(false);
+      //     resolve();
+      //   });
+      // };
+  
+      // setTimeout(100)
+      //  closeNavbar();
       const scrollToTop = () => {
         const c = document.documentElement.scrollTop || document.body.scrollTop;
         if (c > 0) {
           window.requestAnimationFrame(scrollToTop);
-          window.scrollTo(0, c - c / 8);
+          scrollToProduct()
         }
       };
+  
       scrollToTop();
     }
   }
+  
 
   function navigateHambugerMenu(path) {
     setToggleHamburgerMenu(!toggleHamburgerMenu);
@@ -85,7 +97,7 @@ const Navbar = () => {
           {/* navbar tab - laptop */}
           <div className="hidden md:block ">
             <div className="ml-10 flex md:space-x-3 md:text-sm lg:text-base lg:space-x-4 text-white font-semibold">
-              <a onClick={handleClickHome}>Home</a>
+              <a onClick={() =>handleClickHome}>Home</a>
               <a onClick={() => Navigate("/About")}>About</a>
               <a onClick={handleClick}>Products</a>
               <a onClick={() => Navigate("/news")}>Blogs &amp; Tools</a>
@@ -105,7 +117,7 @@ const Navbar = () => {
               <div className="flex flex-col gap-5 text-2xl font-semibold text-white">
                 <a onClick={handleClickHome}>Home</a>
                 <a onClick={() => navigateHambugerMenu("/About")}>About</a>
-                <a onClick={handleClick}>Products</a>
+                <a onClick={handleClickHome}>Products</a>
                 <a onClick={() => navigateHambugerMenu("/news")}>
                   Blogs &amp; Tools
                 </a>
