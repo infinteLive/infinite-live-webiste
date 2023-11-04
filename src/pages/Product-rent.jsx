@@ -123,7 +123,7 @@ export default function ProductRent() {
           <h1 className="text-white font-bold min-[320px]:text-2xl sm:text-3xl ">
             Category
           </h1>
-          <div className="relative min-[320px]:w-[50%]  ">
+          <div className="relative min-[320px]:w-[50%] sm:w-[40%] md:w-[23%]">
             <input
               type="text"
               className="w-full  pl-8 pr-4 py-2 border border-gray-300 rounded-full text-white bg-neutral-600 placeholder-white::placeholder mr-20"
