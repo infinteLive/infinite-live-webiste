@@ -66,6 +66,7 @@ export default function About() {
         console.error("Error:", error);
       });
   };
+  // ABOUT TERUPDATED
   return (
     <div className="background">
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat">
@@ -94,32 +95,35 @@ export default function About() {
         </div>
       </section>
       {/* banner end */}
-      <div className="mt-20">
-        <h1 className="text-red-800 text-4xl font-bold text-center italic">
-          Our Founder
-        </h1>
-      </div>
-      <div className="flex min-[320px]:justify-center min-[320px]:items-center  min-[320px]:gap-0 lg:justify-stretch lg:items-stretch min-[320px]:flex-col lg:flex-row lg:gap-44 mt-5 xl:justify-center xl:items-center">
-        <div className="min-[320px]:w-[80%]  lg:w-1/2 sm:pl-0 lg:pl-40 ">
-          <p className="text-lg mb-6 lg:mt-10 xl:mt-20 text-white">
-            Nest group indonsia Didirikan oleh Bapak Soegianto Husin pada tahun
-            2009 untuk memberikan solusi dari permasalahan persiapan
-            perlengkapan acara dengan minimum viable product : professional
-            sound system Setahun setelahnya pada 31 desember 2010 INFINITE live
-            Production lahir sebagai brand sound system & lighting rental
-            company dan terus berkembang menjadi perusahaan jasa rental
-            equipment event & pengadaan satu-satunya yang ahli mengintegrasikan
-            audio & visual di indonesia
-          </p>
+      <div className="container">
+        <div className="mt-20">
+          <h1 className="text-red-800 text-4xl font-bold text-center italic">
+            Our Founder
+          </h1>
         </div>
-        <div className="min-[320px]:order-first lg:order-2 min-[320px]:w-[210px] sm:w-[330px] lg:w-[280px] min-[320px]:mb-5 lg:mb-0">
-          <img
-            src="https://ik.imagekit.io/zhbznxloz/WhatsApp%20Image%202023-10-11%20at%2022.12.24_c67d5bae.jpg?updatedAt=1697037195297"
-            alt="Tentang Kami"
-            className="w-full min-[320px]:w-[230px:h-[360px] sm:h-[420px] rounded-full object-cover"
-          />
+        <div className="flex min-[320px]:justify-center min-[320px]:items-center  min-[320px]:gap-0 lg:justify-center lg:items-center min-[320px]:flex-col lg:flex-row lg:gap-7 mt-5  ">
+          <div className="min-[320px]:w-[80%]  lg:w-[40%]  ">
+            <p className="text-lg mb-6   text-white">
+              Nest group indonsia Didirikan oleh Bapak Soegianto Husin pada
+              tahun 2009 untuk memberikan solusi dari permasalahan persiapan
+              perlengkapan acara dengan minimum viable product : professional
+              sound system Setahun setelahnya pada 31 desember 2010 INFINITE
+              live Production lahir sebagai brand sound system & lighting rental
+              company dan terus berkembang menjadi perusahaan jasa rental
+              equipment event & pengadaan satu-satunya yang ahli
+              mengintegrasikan audio & visual di indonesia
+            </p>
+          </div>
+          <div className=" min-[320px]:order-first lg:order-2 min-[320px]:w-[210px] sm:w-[330px] lg:w-[30%] min-[320px]:mb-5 lg:mb-0 flex min-[320px]:justify-center lg:justify-start items-center">
+            <img
+              src="https://ik.imagekit.io/zhbznxloz/WhatsApp%20Image%202023-10-11%20at%2022.12.24_c67d5bae.jpg?updatedAt=1697037195297"
+              alt="Tentang Kami"
+              className=" min-[320px]:w-[230px:h-[360px] sm:h-[420px] rounded-full object-cover"
+            />
+          </div>
         </div>
       </div>
+
       {/* founder end */}
 
       <div className="mt-20 w-[90%] mx-auto">
@@ -213,54 +217,52 @@ export default function About() {
       </div>
       {/* who we are end */}
 
-      <div className="min-[320px]:flex-col lg:flex-row min-[320px]:justify-center xl:justify-center xl:items-center min-[320px]:items-center lg:items-stretch flex bg-black p-10 mt-20">
-        <div className=" flex flex-col">
-          <h1 className="text-red-700 text-5xl font-bold italic ml-10 min-[320px]:mt-16 lg:mt-[300px] ">
-            Milestone
-          </h1>
-        </div>
+      <div className="min-[320px]:flex-col lg:flex-row min-[320px]:justify-center xl:justify-center xl:items-center min-[320px]:items-center  flex bg-black p-10 min-[320px]:mt-0 lg:mt-20">
+        <h1 className="text-red-700 text-5xl font-bold italic min-[320px]:mt-16 min-[320px]:mb-10 lg:mb-0  ">
+          Milestone
+        </h1>
         <div className="flex flex-col px-10">
-          <div className="min-[320px]:w-full sm:min-[320px]:ml-0 ">
-            <div className="w-10/12 md:w-[720px] lg:6/12 xl:w-7/12 mx-auto relative">
-              <div className="border-l-2 mt-10">
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-2 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+          <div className="min-[320px]:w-full">
+            <div className="min-[320px]:w-[90%] md:w-[720px] lg:6/12 xl:w-[90%] mx-auto relative">
+              <div className="border-l-2 ">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-blue-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-semibold">2022</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2022</h1>
+                    <h1 className="text-base font-semibold">
                       VELVET interior.exhibition.contractor merger dengan
                       INFINITE live sehingga terbentuklah INFINITE live
                       production One Stop Solution sewa dan jual perlengkapan
-                      pesta
+                      pesta{" "}
                     </h1>
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-pink-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-pink-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-pink-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-pink-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2020</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2020</h1>
+                    <h1 className="text-base font-semibold">
                       INFINITE live mulai menjadi distributor utama YESTECH di
                       indonesia{" "}
                     </h1>
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-green-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-green-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-green-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-green-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2018</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2018</h1>
+                    <h1 className="text-base font-semibold">
                       INFINITE live mendapatkan rekor MURI untuk "Tayangan
                       Pertunjukan Melalui Rangkaian Layar LED Terpanjang" yang
                       menjadi bagian dari LIVE Show
@@ -268,41 +270,41 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-purple-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-purple-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
                   <div className="w-5 h-5 bg-purple-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-purple-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2018</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2018</h1>
+                    <h1 className="text-base font-semibold">
                       nest group indonesia berbadan hukum PT. Sarang Gagas
                       Indonesia
                     </h1>
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded mb-10 flex-col md:flex-row">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-yellow-600 text-white rounded flex-col md:flex-row">
                   <div className="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2016</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2016</h1>
+                    <h1 className="text-base font-semibold">
                       INFINITE live meluncurkan ngi-INFINITE.com sebagai portal
                       rental event equipment online pertama di indonesia
                     </h1>
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-orange-500 text-white rounded mb-10 flex-col md:flex-row">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-orange-500 text-white rounded  flex-col md:flex-row">
                   <div className="w-5 h-5 bg-orange-500 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-orange-200 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold min-[320px]:ps-7 sm:ps-0">
+                    <h1 className="text-xl font-bold min-[320px]:ps-7 sm:ps-0">
                       2013
                     </h1>
                     <h1 className="text-base font-semibold min-[320px]:px-7 sm:px-0">
@@ -311,53 +313,54 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-sky-950 text-white rounded mb-10 flex-col md:flex-row">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-sky-950 text-white rounded  flex-col md:flex-row">
                   <div className="w-5 h-5 bg-sky-950 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-sky-500 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2012</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2012</h1>
+                    <h1 className="text-base font-semibold">
                       INFINITE live mulai mengkapanyekan LIVE (Lighting,
                       Integrated with Visual-audio Equipment) SHOW
                     </h1>
                   </div>
                 </div>
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-indigo-800 text-white rounded mb-10 flex-col md:flex-row">
+
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-indigo-800 text-white rounded  flex-col md:flex-row">
                   <div className="w-5 h-5 bg-indigo-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-indigo-400 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2011</h1>
-                    <h1 className="text-base font-semibold">
+                    <h1 className="text-xl font-bold">2011</h1>
+                    <h1 className="text-basese font-semibold">
                       INFINITE live melengkapi bidang layanannya dengan
                       menambahkan perlengkapan multimedia
                     </h1>
                   </div>
                 </div>
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-cyan-800 text-white rounded mb-10 flex-col md:flex-row">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-cyan-800 text-white rounded  flex-col md:flex-row">
                   <div className="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-cyan-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2010</h1>
-                    <h1 className="text-base font-semibold">
+                    <h1 className="text-xl font-bold">2010</h1>
+                    <h1 className="text-basese font-semibold">
                       INFINITE live lahir sebagai brand sound system & lighting
                       rental company
                     </h1>
                   </div>
                 </div>
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-cyan-800 text-white rounded mb-10 flex-col md:flex-row">
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-cyan-800 text-white rounded  flex-col md:flex-row">
                   <div className="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-cyan-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-lg font-bold">2009</h1>
-                    <h1 className="text-sm font-semibold">
+                    <h1 className="text-xl font-bold">2009</h1>
+                    <h1 className="text-base font-semibold">
                       nest group indonesia didirikan untuk memberikan solusi
                       dari permasalahan persiapan perlengkapan perlengkapan
                       acara dengan Minimum Viable Product: Professional Sound
