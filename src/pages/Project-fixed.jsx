@@ -12,7 +12,7 @@ export default function ProjectFixed() {
       <section className="w-full h-screen overflow-hidden overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat relative">
         <div className=" mt-40 p-8 md:p-12 lg:px-16 lg:py-24 h-full">
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h1 className="text-white min-[320px]:text-xl  min-[414px]:text-2xl sm:text-2xl lg:text-4xl xl:text-5xl font-bold mb-4 text-center">
+            <h1 className="text-white min-[320px]:text-xl  min-[414px]:text-2xl sm:text-2xl lg:text-4xl xl:text-5xl font-bold sm:mb-4 min-[320px]:mb-2 text-center">
               System Integrator Project
             </h1>
             <hr className="border-2 border-red-800 w-50 mb-8" />

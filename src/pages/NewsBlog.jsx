@@ -32,7 +32,7 @@ export default function NewsBlog() {
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/concert-show-stage-entertainment%201.png?updatedAt=1694679652713)] bg-cover bg-center bg-no-repeat relative">
         <div className=" h-screen overflow-hidden">
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h1 className="text-white min-[320px]:text-2xl  min-[414px]:text-3xl  sm:text-5xl font-bold mb-4">
+            <h1 className="text-white min-[320px]:text-2xl  min-[414px]:text-3xl  sm:text-5xl font-bold min-[320px]:mb-2 sm:mb-4">
               Blogs & Tools
             </h1>
             <hr className="border-2 border-red-800 w-50 mb-8" />
@@ -53,15 +53,15 @@ export default function NewsBlog() {
           </div>
         </div>
       </section>
-      <div className="container">
-        <div className="flex min-[320px]:flex-col md:flex-row justify-center lg:justify-between lg:items-start mt-10 gap-5 ">
+      <div className="container xl:w-[85%]">
+        <div className="flex min-[320px]:flex-col md:flex-row justify-center lg:justify-between lg:items-start mt-10 gap-5">
           <div className="min-[320px]:w-[90%]  min-[320px]:mx-auto sm:mx-0 sm:w-full md:w-[48%] xl:w-[50%] ">
             <h1 className="text-white  text-3xl font-bold mb-5"> BLOGS</h1>
             <div className="flex  justify-center flex-col items-start gap-5 ">
               {/* Kartu Besar */}
               <div className="w-full h-auto bg-zinc-600 bg-opacity-30 shadow-lg rounded-lg overflow-hidden p-5 ">
                 <div className="flex xl:flex-row  min-[320px]:flex-col">
-                  <div className="xl:w-[50%] lg:w-full ">
+                  <div className="xl:w-[60%] lg:w-full ">
                     <img
                       src="https://ik.imagekit.io/h8zb3jmn4/Property%201=slider2.png?updatedAt=1694625796632"
                       alt=""
@@ -83,7 +83,7 @@ export default function NewsBlog() {
 
               <div className="w-full h-auto bg-zinc-600 bg-opacity-30 shadow-lg rounded-lg overflow-hidden p-5 ">
                 <div className="flex xl:flex-row  min-[320px]:flex-col">
-                  <div className="xl:w-[50%] lg:w-full ">
+                  <div className="xl:w-[60%] lg:w-full ">
                     <img
                       src="https://ik.imagekit.io/h8zb3jmn4/Property%201=slider2.png?updatedAt=1694625796632"
                       alt=""
@@ -105,7 +105,7 @@ export default function NewsBlog() {
 
               <div className="w-full h-auto bg-zinc-600 bg-opacity-30 shadow-lg rounded-lg overflow-hidden p-5 ">
                 <div className="flex xl:flex-row  min-[320px]:flex-col">
-                  <div className="xl:w-[50%] lg:w-full ">
+                  <div className="xl:w-[60%] lg:w-full ">
                     <img
                       src="https://ik.imagekit.io/h8zb3jmn4/Property%201=slider2.png?updatedAt=1694625796632"
                       alt=""

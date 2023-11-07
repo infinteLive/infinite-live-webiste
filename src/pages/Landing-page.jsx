@@ -158,14 +158,14 @@ export default function LandingPage() {
         <div id="product-section" className="text-center mt-20">
           <h1 className="text-red-800 text-4xl font-bold">Our Products</h1>
         </div>
-        <div className="flex sm:flex-row justify-center min-[320px]:flex-col items-center sm:gap-5 md:gap-24 mt-20">
+        <div className="flex flex-row justify-center items-center sm:gap-16 md:gap-24 min-[320px]:mt-12 sm:mt-20 mb-36  sm:flex-row min-[320px]:gap-3 min-[400px]:gap-5">
           <div className="flex justify-center items-center ">
             <div
               onClick={() => Navigate("/product-rent")}
-              className="bg-neutral-500 rounded-lg  h-[300px] w-[250px] text-black  border-2 border-black p-8  text-center hover:text-white hover:border-white cursor-pointer transition-colors duration-300 min-[320px]:mb-5 sm:mb-0"
+              className="bg-neutral-500 text-black hover:text-white rounded-lg sm:h-[300px] sm:w-[250px]  min-[320px]:h-[260px] min-[320px]:w-[170px] min-[400px]:w-[180px]  border-2 border-black min-[320px]:p-2 flex justify-center items-center flex-col sm:p-8  text-center hover:border-white cursor-pointer transition-colors duration-300"
             >
-              <h2 className=" text-center text-2xl font-bold mt-16">RENTAL</h2>
-              <h2 className=" text-center text-2xl font-semibold mt-5 ">
+              <h2 className=" text-center text-2xl font-bold">RENTAL</h2>
+              <h2 className="text-center text-2xl font-semibold mt-5 ">
                 Event Equipments
               </h2>
             </div>
@@ -174,18 +174,18 @@ export default function LandingPage() {
             onClick={() => Navigate("/product-fixed")}
             className="flex justify-center items-center "
           >
-            <div className="bg-neutral-500 text-black hover:text-white rounded-lg h-[300px] w-[250px]  border-2 border-black p-8  text-center hover:border-white cursor-pointer transition-colors duration-300">
-              <h2 className=" text-center text-2xl font-bold mt-7">
+            <div className="bg-neutral-500 text-black hover:text-white rounded-lg sm:h-[300px] sm:w-[250px]  min-[320px]:h-[260px] min-[320px]:w-[170px] min-[400px]:w-[180px]  border-2 border-black min-[320px]:p-2  flex justify-center items-center flex-col sm:p-8  text-center hover:border-white cursor-pointer transition-colors duration-300">
+              <h2 className="text-center break-words text-2xl font-bold">
                 SYSTEMS INTEGRATOR
               </h2>
-              <h2 className=" text-center text-2xl font-semibold mt-5 ">
+              <h2 className="  text-center text-2xl font-semibold mt-5  ">
                 Fixed Installations
               </h2>
             </div>
           </div>
         </div>
-        <div className="flex min-[320px]:flex-col md:flex-row min-[320px]:gap-5 flex-row items-center justify-center md:gap-5 lg:gap-16 ml-4  lg:bg-transparent">
-          <div className="sm:max-w-sm min-[320px]:max-w-xs   mt-40  rounded overflow-hidden shadow-lg text-center">
+        <div className="flex min-[320px]:flex-col md:flex-row min-[320px]:gap-5 flex-row items-center justify-center md:gap-5 lg:gap-16 lg:bg-transparent">
+          <div className="sm:max-w-sm min-[320px]:max-w-xs min-[320px]:mt-10 sm:mt-40  rounded overflow-hidden shadow-lg text-center">
             <img
               className="md:w-[200px] md:h-[240px] lg:w-[250px] lg:h-[250px] sm:w-full min-[320px]:w-full rounded "
               src="https://akcdn.detik.net.id/community/media/visual/2023/09/01/lrt-jabodebek-8_169.jpeg?w=700&q=90"

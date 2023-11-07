@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 export default function ContactFixed() {
   return (
     <div className="bg-black bg-cover bg-center overflow-hidden  bg-no-repeat relative  ">
-      <div className="container sm:bg-pink-700 md:bg-green-700 lg:bg-red-600  md:max-w-2xl sm:max-w-sm min-[320px]:max-w-xs">
+      <div className="container md:max-w-2xl sm:max-w-sm min-[320px]:max-w-xs">
         <div className="text-white text-left mb-4 mt-28">
           <h1 className="min-[320px]:text-2xl sm:text-3xl md:text-5xl mb-2 font-bold">
             SYSTEMS INTEGRATOR
@@ -26,7 +26,7 @@ export default function ContactFixed() {
                 type="text"
                 id="nama"
                 name="nama"
-                className="w-full px-14 py-2 border-2 rounded-lg bg-gray-300"
+                className="w-full min-[320px]:px-5 sm:px-14 py-2 border-2 rounded-lg bg-gray-300"
               />
             </div>
             <h1 className="text-center text-white text-xl font-bold mt-5">
@@ -43,7 +43,7 @@ export default function ContactFixed() {
                 type="text"
                 id="lastName"
                 name="lastName"
-                className="w-full px-14 py-2 border-2 rounded-lg bg-gray-300"
+                className="w-full min-[320px]:px-5 sm:px-14 py-2 border-2 rounded-lg bg-gray-300"
               />
             </div>
           </div>

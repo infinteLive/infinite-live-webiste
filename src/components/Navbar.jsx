@@ -9,9 +9,7 @@ const Navbar = () => {
 
   function handlerHamburgerMenu(e) {
     e.stopPropagation();
-
     setToggleHamburgerMenu(!toggleHamburgerMenu);
-    console.log("clicked");
   }
 
   const scrollToProduct = (e) => {
@@ -26,6 +24,7 @@ const Navbar = () => {
   const handleClick = (e) => {
     e.preventDefault();
     if (location.pathname !== "/") {
+      // window.location.href = "/"; jangan gunakan gref agar tidak refresh halaman
       Navigate("/");
       setTimeout(scrollToProduct, 100); // Menunggu navigasi selesai baru melakukan scroll
     } else {
@@ -48,8 +47,9 @@ const Navbar = () => {
     };
   }, []);
   function handleClickHome() {
+    navigateHambugerMenu("/");
     if (window.location.pathname !== "/") {
-      window.location.href = "/";
+      //window.location.href = "/"; // jngan pakai href(agar tidak refresh halaman)
     } else {
       const scrollToTop = () => {
         const c = document.documentElement.scrollTop || document.body.scrollTop;
@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* Logo */}
             <img
-              className="w-52"
+              className="min-[320px]:w-44 sm:w-52"
               src="https://ik.imagekit.io/zhbznxloz/Secondary%20Logo%202.png?updatedAt=1694673554744"
               alt=""
             />
@@ -101,7 +101,7 @@ const Navbar = () => {
           </div>
 
           {toggleHamburgerMenu ? (
-            <div className="w-[80%] md:hidden h-screen bg-slate-900 absolute top-0  bottom-0 right-0 z-50 flex flex-col pt-28 ps-10">
+            <div className="w-[80%] md:hidden h-screen bg-black absolute top-0  bottom-0 right-0 z-50 flex flex-col pt-28 ps-10">
               <div className="flex flex-col gap-5 text-2xl font-semibold text-white">
                 <a onClick={handleClickHome}>Home</a>
                 <a onClick={() => navigateHambugerMenu("/About")}>About</a>

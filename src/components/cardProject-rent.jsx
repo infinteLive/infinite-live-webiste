@@ -9,7 +9,7 @@ export default function CardProjectRent() {
   const navigate = useNavigate();
   return (
     <div className="background">
-      <div className="container">
+      <div className="container xl:w-[85%]">
         <div className="text-center pt-20">
           <h1 className="text-red-800 italic text-4xl font-bold">
             Our Projects
@@ -51,8 +51,8 @@ export default function CardProjectRent() {
 
           <div className="grid xl:grid-cols-4 md:grid-cols-3 min-[320px]:grid-cols-2  gap-0 justify-between w-full">
             <div
-              onClick={() => navigate("/detailProject-rent")}
-              className="lg:w-[280px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl p-1 shadow-lg mx-auto  "
+              onClick={() => navigate("/detailProject-fixed")}
+              className="lg:w-[280px] xl:w-[260px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl p-1 shadow-lg mx-auto  "
             >
               <div className="mx-auto max-w-xs lg:h-[300px] md:h-[255px] sm:h-[220px] min-[400px]:h-[200px] min-[320px]:h-[180px] overflow-hidden">
                 <img
@@ -75,8 +75,8 @@ export default function CardProjectRent() {
             </div>
 
             <div
-              onClick={() => navigate("/detailProject-rent")}
-              className="lg:w-[280px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl  shadow-lg mx-auto  p-1 "
+              onClick={() => navigate("/detailProject-fixed")}
+              className="lg:w-[280px] xl:w-[260px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl p-1 shadow-lg mx-auto  "
             >
               <div className="mx-auto max-w-xs lg:h-[300px] md:h-[255px] sm:h-[220px] min-[400px]:h-[200px] min-[320px]:h-[180px] overflow-hidden">
                 <img
@@ -99,8 +99,8 @@ export default function CardProjectRent() {
             </div>
 
             <div
-              onClick={() => navigate("/detailProject-rent")}
-              className="lg:w-[280px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl  shadow-lg mx-auto  p-1 "
+              onClick={() => navigate("/detailProject-fixed")}
+              className="lg:w-[280px] xl:w-[260px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl p-1 shadow-lg mx-auto  "
             >
               <div className="mx-auto max-w-xs lg:h-[300px] md:h-[255px] sm:h-[220px] min-[400px]:h-[200px] min-[320px]:h-[180px] overflow-hidden">
                 <img
@@ -123,8 +123,8 @@ export default function CardProjectRent() {
             </div>
 
             <div
-              onClick={() => navigate("/detailProject-rent")}
-              className="lg:w-[280px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl  shadow-lg mx-auto   p-1"
+              onClick={() => navigate("/detailProject-fixed")}
+              className="lg:w-[280px] xl:w-[260px] lg:h-[450px] md:w-[240px] md:h-[380px] sm:w-[220px] sm:h-[340px] min-[320px]:mb-5 min-[400px]:w-[180px] min-[320px]:w-[160px] lg:mb-0  rounded-xl p-1 shadow-lg mx-auto  "
             >
               <div className="mx-auto max-w-xs lg:h-[300px] md:h-[255px] sm:h-[220px] min-[400px]:h-[200px] min-[320px]:h-[180px] overflow-hidden">
                 <img
