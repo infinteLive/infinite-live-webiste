@@ -72,7 +72,7 @@ export default function About() {
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat">
         <div className=" mt-40 p-8  h-full">
           <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h1 className="text-white  sm:text-5xl font-bold  mb-4 min-[320px]:text-4xl ">
+            <h1 className="text-white  sm:text-5xl font-bold min-[320px]:mb-2  sm:mb-4 min-[320px]:text-4xl ">
               About Us
             </h1>
             <hr className="border-2 border-red-800 w-50 mb-8" />
@@ -114,7 +114,7 @@ export default function About() {
               mengintegrasikan audio & visual di indonesia
             </p>
           </div>
-          <div className=" min-[320px]:order-first lg:order-2 min-[320px]:w-[210px] sm:w-[330px] lg:w-[30%] min-[320px]:mb-5 lg:mb-0 flex min-[320px]:justify-center lg:justify-start items-center">
+          <div className=" min-[320px]:order-first lg:order-2 min-[320px]:w-[210px] sm:w-[330px] lg:w-[30%] min-[320px]:mb-5 lg:mb-0 flex min-[320px]:justify-center lg:justify-center items-center">
             <img
               src="https://ik.imagekit.io/zhbznxloz/WhatsApp%20Image%202023-10-11%20at%2022.12.24_c67d5bae.jpg?updatedAt=1697037195297"
               alt="Tentang Kami"
@@ -142,7 +142,7 @@ export default function About() {
         </h2>
 
         <div className="">
-          <h1 className=" text-center text-orange-500 mt-5 mb-2 text-xl   font-bold">
+          <h1 className="ps-8 text-left text-orange-500 mt-5 mb-2 text-xl   font-bold">
             Why You Choose Infinite Live
           </h1>
 
@@ -218,7 +218,7 @@ export default function About() {
       {/* who we are end */}
 
       <div className="min-[320px]:flex-col lg:flex-row min-[320px]:justify-center xl:justify-center xl:items-center min-[320px]:items-center  flex bg-black p-10 min-[320px]:mt-0 lg:mt-20">
-        <h1 className="text-red-700 text-5xl font-bold italic min-[320px]:mt-16 min-[320px]:mb-10 lg:mb-0  ">
+        <h1 className="text-red-700  xl:pb-64 lg:pb-0 text-5xl font-bold italic min-[320px]:mt-16 min-[320px]:mb-10 lg:mb-0  ">
           Milestone
         </h1>
         <div className="flex flex-col px-10">
@@ -284,8 +284,8 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-yellow-600 text-white rounded flex-col md:flex-row">
-                  <div className="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-yellow-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
 
@@ -298,25 +298,25 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-orange-500 text-white rounded  flex-col md:flex-row">
-                  <div className="w-5 h-5 bg-orange-500 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-orange-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-orange-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <div className="w-10 h-1 bg-orange-200 absolute -left-10 z-0"></div>
+                  <div className="w-10 h-1 bg-orange-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
-                    <h1 className="text-xl font-bold min-[320px]:ps-7 sm:ps-0">
+                    <h1 className="text-xl font-bold min-[320px]:ps-4 sm:ps-0">
                       2013
                     </h1>
-                    <h1 className="text-base font-semibold min-[320px]:px-7 sm:px-0">
+                    <h1 className="text-base font-semibold min-[320px]:px-4 sm:px-0">
                       VELVET interior.exhibition.contractor terbentuk
                     </h1>
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-sky-950 text-white rounded  flex-col md:flex-row">
-                  <div className="w-5 h-5 bg-sky-950 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-sky-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-sky-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <div className="w-10 h-1 bg-sky-500 absolute -left-10 z-0"></div>
+                  <div className="w-10 h-1 bg-sky-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
                     <h1 className="text-xl font-bold">2012</h1>
@@ -327,10 +327,10 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-indigo-800 text-white rounded  flex-col md:flex-row">
-                  <div className="w-5 h-5 bg-indigo-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-indigo-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-indigo-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
-                  <div className="w-10 h-1 bg-indigo-400 absolute -left-10 z-0"></div>
+                  <div className="w-10 h-1 bg-indigo-300 absolute -left-10 z-0"></div>
 
                   <div className="flex-auto">
                     <h1 className="text-xl font-bold">2011</h1>
@@ -340,8 +340,8 @@ export default function About() {
                     </h1>
                   </div>
                 </div>
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-cyan-800 text-white rounded  flex-col md:flex-row">
-                  <div className="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-cyan-600 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-cyan-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-cyan-300 absolute -left-10 z-0"></div>
 
@@ -353,8 +353,8 @@ export default function About() {
                     </h1>
                   </div>
                 </div>
-                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-cyan-800 text-white rounded  flex-col md:flex-row">
-                  <div className="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"></div>
+                <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 min-[320px]:py-1 md:py-2  mb-7 bg-cyan-800 text-white rounded  flex-col md:flex-row space-y-4 md:space-y-0">
+                  <div className="w-5 h-5 bg-cyan-800 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
                   <div className="w-10 h-1 bg-cyan-300 absolute -left-10 z-0"></div>
 
@@ -377,7 +377,7 @@ export default function About() {
 
       <div className="text-center mt-10 font-bold">
         <h1
-          className="text-white min-[320px]:text-2xl sm:text-3xl italic"
+          className="text-white min-[320px]:text-[22px] sm:text-3xl italic"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           member of nest group indonesia
@@ -429,9 +429,9 @@ export default function About() {
           </div>
 
           <div className="text-center">
-            <div className="min-[320px]:w-[300px] min-[320px]:h-[290px]  md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  rounded-xl shadow-lg bg-zinc-300 border-2 border-black">
+            <div className="min-[320px]:w-[300px] min-[320px]:h-[290px]  md:w-[220px] md:h-[200px] lg:w-[250px] lg:h-[220px]  rounded-xl shadow-lg bg-zinc-300 border-2 border-black flex jus items-center flex-col ">
               <img
-                className="w-full h-full object-cover object-center p-5"
+                className="min-[320px]:w-[290px] min-[320px]:h-[250px] p-2 mt-3  w-full h-full object-cover object-center "
                 src="https://ik.imagekit.io/zhbznxloz/VAT%20logo.png?updatedAt=1696270357403"
                 alt="Kitten"
               />

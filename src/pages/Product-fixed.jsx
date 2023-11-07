@@ -226,8 +226,8 @@ export default function ProductFixed() {
           </div>
         )}
         );
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

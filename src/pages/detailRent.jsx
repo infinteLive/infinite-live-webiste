@@ -61,11 +61,11 @@ export default function DetailRent() {
     <div className="background">
       <div className="container">
         <section className="py-20 font-poppins ">
-          <div className="max-w-6xl h-min mx-auto bg-zinc-600 relative bg-opacity-30 rounded-lg  ">
-            <div className="flex flex-wrap justify-center items-center  min-[320px]:mb-14 sm:mb-24 mx-4 md:h-full overflow-hidden">
-              <div className="w-full md:w-1/2 ">
-                <div className="relative  overflow-hidden bg-white rounded-xl">
-                  <div className="relative mb-6 lg:mb-10  min-[320px]:h-52 md:h-60 lg:h-96 overflow-hidden">
+          <div className="min-[320px]:w-[90%] sm:max-w-6xl mx-auto  bg-zinc-600 relative bg-opacity-30 rounded-lg  ">
+            <div className="flex flex-wrap justify-center items-center  min-[320px]:mb-14 sm:mb-24  md:h-full overflow-hidden">
+              <div className="w-full  md:w-1/2 ">
+                <div className="relative  overflow-hidden bg-white rounded-xl min-[320px]:m-0 min-[320px]:m-4 md:m-5">
+                  <div className="relative mb-6 lg:mb-10  min-[320px]:h-52 md:h-60 lg:h-[22rem] overflow-hidden">
                     {/* Tombol navigasi */}
                     <a
                       className="absolute left-0 transform lg:ml-2 top-1/2 translate-1/2"
@@ -231,7 +231,7 @@ export default function DetailRent() {
             <h1 className="uppercase font-bold text-2xl text-center text-white">
               Installed On Projects
             </h1>
-            <div className=" px-6 pt-10 mb-8 w-1/2 lg:w-3/5 md:w-4/5 min-[320px]:w-[100%] md:mb-0 rounded-xl bg-zinc-400 mt-10 flex justify-center items-center ">
+            <div className="min-[320px]:px-2 sm:px-6 min-[320px]:pt-2 sm:pt-10 mb-8 w-1/2 lg:w-3/5 md:w-4/5 min-[320px]:w-[90%] md:mb-0 rounded-xl bg-zinc-400 mt-10 flex justify-center items-center ">
               <div className="relative top-0 overflow-hidden  rounded-xl">
                 <div className="relative mb-6 lg:mb-10 lg:h-96">
                   {/* Tombol navigasi */}
@@ -328,40 +328,37 @@ export default function DetailRent() {
             </div>
           </div>
         </section>
-
-        <Footer />
-        {showPopup && (
-          <div className="fixed inset-0 mt-16 flex items-center justify-center z-100">
-            <div className="bg-white p-8 rounded shadow-lg max-w-md relative">
-              {/* Isi popup di sini */}
-              <img
-                src={largeImageSrc}
-                alt=""
-                className="w-full h-full object-cover p-10"
-              />
-              <button
-                onClick={closePopup}
-                className="absolute top-2 right-2 p-2"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="h-6 w-6 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        )}
       </div>
+
+      <Footer />
+      {showPopup && (
+        <div className="fixed inset-0 mt-16 flex items-center justify-center z-100">
+          <div className="bg-white p-8 rounded shadow-lg max-w-md relative">
+            {/* Isi popup di sini */}
+            <img
+              src={largeImageSrc}
+              alt=""
+              className="w-full h-full object-cover p-10"
+            />
+            <button onClick={closePopup} className="absolute top-2 right-2 p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="h-6 w-6 text-gray-700"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

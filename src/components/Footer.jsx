@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="container ">
           <div className="w-full flex min-[320px]:flex-col min-[320px]:gap-5 md:items-stretch justify-evenly sm:flex-col md:gap-5 lg:gap-0 md:flex-row text-white">
             <div className="w-full px-4 lg:w-3/12 md:w-[50%] ">
-              <div className="w-full mb-10 ml-10">
+              <div className="w-full ml-10">
                 <a href="/#" className="mb-6  inline-block max-w-[160px]">
                   <img
                     src="https://ik.imagekit.io/h8zb3jmn4/WHITE%20TRANSPARENT%20LOGO%20-%20INFINITE%20live%20production%20copy.PNG?updatedAt=1694673364185"
@@ -62,7 +62,8 @@ const Footer = () => {
               <div className="flex items-center">
                 <a
                   href="/#"
-                  className="mb-10  flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                  className="mb-10  flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] text-dark hover:border-primary hover:bg-primary 
+                  hover:text-white min-[320px]:mr-3 lg:mr-3 xl:mr-4"
                 >
                   <svg
                     width={8}

@@ -237,8 +237,8 @@ export default function ProductRent() {
           </div>
         )}
         );
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

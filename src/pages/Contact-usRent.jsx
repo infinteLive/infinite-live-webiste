@@ -25,7 +25,7 @@ export default function ContactRent() {
             type="text"
             id="whatsapp"
             name="whatsapp"
-            className="w-full px-14 py-2 border-2 rounded-lg bg-gray-300"
+            className="w-full min-[320px]:px-5 sm:px-14 py-2 border-2 rounded-lg bg-gray-300"
           />
           <h1 className="text-center text-white md:text-xl sm:text-base font-bold mt-5 ">
             OR
@@ -43,7 +43,7 @@ export default function ContactRent() {
             type="text"
             id="email"
             name="email"
-            className="w-full px-14 py-2 border-2 rounded-lg bg-gray-300"
+            className="w-full min-[320px]:px-5 sm:px-14 py-2 border-2 rounded-lg bg-gray-300"
           />
         </div>
 

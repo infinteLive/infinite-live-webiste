@@ -12,7 +12,7 @@ export default function OurProject() {
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat relative">
         <div className=" mt-40 p-8 md:p-12 lg:px-16 lg:py-24 h-full">
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-            <h1 className="text-white min-[320px]:text-2xl  min-[414px]:text-3xl  sm:text-5xl font-bold mb-4">
+            <h1 className="text-white min-[320px]:text-2xl  min-[414px]:text-3xl  sm:text-5xl font-bold min-[320px]:mb-2 sm:mb-4">
               Our Projects
             </h1>
             <hr className="border-2 border-red-800 w-50 mb-8" />
@@ -41,11 +41,11 @@ export default function OurProject() {
           </h1>
         </div>
 
-        <div className="flex flex-row justify-center items-center sm:gap-16 md:gap-24 min-[320px]:mt-12 sm:mt-20 mb-36  sm:flex-row min-[320px]:gap-5">
+        <div className="flex flex-row justify-center items-center sm:gap-16 md:gap-24 min-[320px]:mt-12 sm:mt-20 mb-36  sm:flex-row min-[320px]:gap-3 min-[400px]:gap-5">
           <div className="flex justify-center items-center ">
             <div
               onClick={() => navigate("/project-rent")}
-              className="bg-neutral-500 text-black hover:text-white rounded-lg sm:h-[300px] sm:w-[250px]  min-[320px]:h-[260px] min-[320px]:w-[180px]  border-2 border-black min-[320px]:p-2 flex justify-center items-center flex-col sm:p-8  text-center hover:border-white cursor-pointer transition-colors duration-300"
+              className="bg-neutral-500 text-black hover:text-white rounded-lg sm:h-[300px] sm:w-[250px]  min-[320px]:h-[260px] min-[320px]:w-[170px] min-[400px]:w-[180px]  border-2 border-black min-[320px]:p-2 flex justify-center items-center flex-col sm:p-8  text-center hover:border-white cursor-pointer transition-colors duration-300"
             >
               <h2 className=" text-center text-2xl font-bold">RENTAL</h2>
               <h2 className=" text-center text-2xl font-semibold mt-5 ">
@@ -57,7 +57,7 @@ export default function OurProject() {
             onClick={() => navigate("/project-fixed")}
             className="flex justify-center items-center "
           >
-            <div className="bg-neutral-500 text-black hover:text-white rounded-lg sm:h-[300px] sm:w-[250px]  min-[320px]:h-[260px] min-[320px]:w-[180px]  border-2 border-black min-[320px]:p-2  flex justify-center items-center flex-col sm:p-8  text-center hover:border-white cursor-pointer transition-colors duration-300">
+            <div className="bg-neutral-500 text-black hover:text-white rounded-lg sm:h-[300px] sm:w-[250px]  min-[320px]:h-[260px] min-[320px]:w-[170px] min-[400px]:w-[180px]  border-2 border-black min-[320px]:p-2  flex justify-center items-center flex-col sm:p-8  text-center hover:border-white cursor-pointer transition-colors duration-300">
               <h2 className=" text-center break-words text-2xl font-bold ">
                 SYSTEMS INTEGRATOR
               </h2>
