@@ -8,5 +8,9 @@
     background-position: center;
     height: 100%
   }
+  ::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+  }
 
   
