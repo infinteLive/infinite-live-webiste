@@ -1,4 +1,4 @@
-import { createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "../pages/Landing-page";
 import BaseLayout from "../BaseLayout";
 import NewsBlog from "../pages/NewsBlog";
@@ -17,86 +17,88 @@ import DetailProjectRent from "../pages/DetailProject-rent";
 import CardProjectRent from "../components/cardProject-rent";
 import CardProjectFixed from "../components/cardProjectFixed";
 import DetailProjectFixed from "../pages/detailProject-Fixed";
+import DetailNewsBlog from "../pages/DetailNewsBlog";
 // import Navbar from "../components/Navbar";
-
-
-
 
 const router = createBrowserRouter([
   {
-   element : <BaseLayout/>,
-   children : [
+    element: <BaseLayout />,
+    children: [
       {
-         path : '/',
-         element : <LandingPage/>
+        path: "/",
+        element: <LandingPage />,
       },
       {
-         path : '/news',
-         element : <NewsBlog/>
+        path: "/news",
+        element: <NewsBlog />,
       },
       {
-         path : '/about',
-         element : <About/>
+        path: "/detail-news/:id",
+        element: <DetailNewsBlog />,
+      },
+
+      {
+        path: "/about",
+        element: <About />,
       },
       {
-         path : '/project',
-         element : <OurProject/>
+        path: "/project",
+        element: <OurProject />,
       },
       // {
       //    path : '/contact-us',
       //    element : <Contactus/>
       // },
       {
-         path : '/contact-us',
-         element : <ContactRent/>
+        path: "/contact-us",
+        element: <ContactRent />,
       },
       {
-         path : '/contact-fixed',
-         element :<ContactFixed/>
+        path: "/contact-fixed",
+        element: <ContactFixed />,
       },
       {
-         path : '/product-rent',
-         element : <ProductRent/>
+        path: "/product-rent",
+        element: <ProductRent />,
       },
       {
-         path : '/product-fixed',
-         element : <ProductFixed/>
+        path: "/product-fixed",
+        element: <ProductFixed />,
       },
       {
-         path :'/project-rent',
-         element : <ProjectRent/>
+        path: "/project-rent",
+        element: <ProjectRent />,
       },
       {
-         path :'/project-fixed',
-         element : <ProjectFixed/>
+        path: "/project-fixed",
+        element: <ProjectFixed />,
       },
       {
-         path : '/detailRent',
-         element : <DetailRent/>
+        path: "/detail-rent/:id",
+        element: <DetailRent />,
       },
       {
-         path : '/detailfixed',
-         element : <DetailFixed/>
+        path: "/detail-fixed/:id",
+        element: <DetailFixed />,
       },
       {
-         path : '/detailProject-rent',
-         element : <DetailProjectRent/>
+        path: "/detailProject-rent/:id",
+        element: <DetailProjectRent />,
       },
       {
-         path :'/projectRent',
-         element : <CardProjectRent/>
+        path: "/detailProject-fixed/:id",
+        element: <DetailProjectFixed />,
       },
       {
-         path : '/projectFixed',
-         element : <CardProjectFixed/>
+        path: "/projectRent",
+        element: <CardProjectRent />,
       },
       {
-         path : '/detailProject-fixed',
-         element : <DetailProjectFixed/>
-      }
-   ]
-  }
-])
+        path: "/projectFixed",
+        element: <CardProjectFixed />,
+      },
+    ],
+  },
+]);
 
-
- export default router
+export default router;

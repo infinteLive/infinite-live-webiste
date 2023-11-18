@@ -4,11 +4,7 @@ import ComproGagasIndo from "../assets/COMPRO-GAGASINDO-2023-FULL.pdf";
 import comproVAT from "../assets/Visual-Art-&-Technology-Company-Profile.pdf";
 import axios from "axios";
 import { saveAs } from "file-saver";
-import { useEffect } from "react";
 export default function About() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
   const handleDownloadInfite = () => {
     axios({
       url: Compro,
@@ -66,7 +62,6 @@ export default function About() {
         console.error("Error:", error);
       });
   };
-  // ABOUT TERUPDATED
   return (
     <div className="background">
       <section className="w-full h-screen overflow-hidden bg-[url(https://ik.imagekit.io/zhbznxloz/wallpaperflare%201.png?updatedAt=1694697094143)] bg-cover bg-center bg-no-repeat">
